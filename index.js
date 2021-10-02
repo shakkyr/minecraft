@@ -170,17 +170,19 @@ axe.addEventListener('click', () => {
 let itemBank;
 woodContainer.addEventListener('click',() => {
   itemBank = "woodContainer";
-  toolBank =0;
+  toolBank ='';
 })
 groundContainer.addEventListener('click',() => {
   itemBank = "groundContainer";
+  toolBank ='';
 })
 rockContainer.addEventListener('click',() => {
   itemBank = "rockContainer";
+  toolBank ='';
 })
 leafsContainer.addEventListener('click',() => {
   itemBank = "leafsContainer";
-  toolBank =0;
+  toolBank ='';
 })
 
   
