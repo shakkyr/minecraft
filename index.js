@@ -155,34 +155,34 @@ function mainFunction(e) {
 let toolBank ;
 pickAxe.addEventListener('click', () => {
     toolBank = 'pickAxe';
- 
+    itemBank = 0;
 })
 
 shovel.addEventListener('click', () => {
   toolBank = 'shovel';
-
+  itemBank = 0;
 })
 axe.addEventListener('click', () => {
   toolBank = 'axe';
-
+  itemBank = 0;
 })
 
 let itemBank;
 woodContainer.addEventListener('click',() => {
   itemBank = "woodContainer";
-  toolBank ='';
+  toolBank =0;
 })
 groundContainer.addEventListener('click',() => {
   itemBank = "groundContainer";
-  toolBank ='';
+  toolBank =0;
 })
 rockContainer.addEventListener('click',() => {
   itemBank = "rockContainer";
-  toolBank ='';
+  toolBank =0;
 })
 leafsContainer.addEventListener('click',() => {
   itemBank = "leafsContainer";
-  toolBank ='';
+  toolBank =0;
 })
 
   
