@@ -23,8 +23,7 @@ body {
 }
 .start {
     font-family: "Minecraft Font", sans-serif;
-    font-size: 1.2rem;
-    padding: 10px 4px 5px 4px;
+    font-size: 1.5vmin;
     width: 5%;
     cursor: pointer;
     color: black;
@@ -113,6 +112,9 @@ div[data-element-type="5"] {
     
 div[data-element-type="6"] {
         background: url("img/leaves.png") no-repeat center center/cover;
+}
+div[data-element-type="7"] {
+        background: url("img/water.jpg") no-repeat center center/cover;
 }
 
 
