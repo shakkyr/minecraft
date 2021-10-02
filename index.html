@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="frontPage">
+      <div class="entry-box">
+        <div class="info">
+          <p>Instructions:</p>
+          <p>
+            Remove tiles from the world, each tile is made from one material
+          </p>
+          <p>The materials will be placed in your inventory</p>
+          <p>The inventory can hold up to 5 tiles</p>
+          <p>Each material can be removed only with the matching tool</p>
+          <p>Place the materials back in the world as you like!</p>
+          <p>
+            Pay attention! you can take only the material that is the first in
+            the inventory
+          </p>
+          <p>Have fun!</p>
+        </div>
+        <input type="button" value="Start Game" class="start" />
+      </div>
+    </div>
+    <div id="game">
+      <div class="mineWorld"></div>
+      <div class="toolList">
+          <div><input type="button" value="RESET" class="btn reset"></div>
+          <div><input type="button" value="EXIT" class="btn exit"></div>
+          <div><input type="button" value="PickAxe" class="tool pickAxe"></div>
+          <div><input type="button" value="Shovel" class="tool shovel"></div>
+          <div><input type="button" value="Axe" class="tool axe"></div>
+          <div class="storage woodContainer">0</div>
+          <div class="storage groundContainer">0</div>
+          <div class="storage rockContainer">0</div>
+          <div class="storage leafsContainer">0</div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'mincraft', Arial, Helvetica, sans-serif;
+    src: url("minecraft-font.ttf") format("truetype");
+    height: 100vh;
+    width: 100vw;
+}
+
+#frontPage{
+    background: url("img/minecraft-header.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    visibility: hidden;
+    z-index: 2;
+
+}
+.start {
+    font-family: "Minecraft Font", sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 4px 5px 4px;
+    width: 5%;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+}
+
+.start:hover {
+    color: white;
+  background-color: rgb(9, 119, 82);
+  border: 2px solid white;
+}
+
+.info {
+    border: slategrey 1px solid;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    text-align: center;
+    background: rgba(43, 54, 50, 0.7);
+    color: rgb(184, 187, 187);
+    border-radius: 5px;
+    font-size: larger;
+}
+
+#game {
+
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 237, 240);
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.mineWorld {
+    background-color: rgb(201, 201, 201);
+    width: 80vmax;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20, auto);
+    grid-template-rows: repeat(20, auto);
+    grid-area: 1 / 1 / 2 / 2;       
+    }
+.element {
+    width: 100%;
+    height: 100%;
+}
+    
+.element:hover {
+        box-shadow: inset 0px 0px 0px 1px rgba(205, 205, 205, 0.9);
+}
+    
+div[data-element-type="0"] {
+        background-color: rgb(131, 183, 238);
+}
+    
+div[data-element-type="1"] {
+        background-color: white;
+}
+    
+div[data-element-type="2"] {
+        background: url("img/ground.png") no-repeat center center/cover;
+}
+    
+div[data-element-type="3"] {
+        background: url("img/grass.png") no-repeat center center/cover;
+}
+    
+div[data-element-type="4"] {
+        background: url("img/rock.png") no-repeat center center/cover;
+}
+    
+div[data-element-type="5"] {
+        background: url("img/tree_trunk.png") no-repeat center center/cover;
+}
+    
+div[data-element-type="6"] {
+        background: url("img/leaves.png") no-repeat center center/cover;
+}
+
+
+/* =================================  toolList  ======================== */
+.toolList {
+    background: #202327;
+    width: 90%;
+    height: 100%;
+    margin-left: 30%;
+    grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+}
+
+
+.btn {
+    font-family: "Minecraft Font", sans-serif;
+  font-size: 1.5vmax;
+  width: 5vmax;
+  height: 3vmax;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  margin: 5%;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.reset {
+    position: absolute;
+  left: 20%;
+}
+
+.exit {
+    position: absolute;
+  left: 20%;
+  top: 6%;
+}
+
+.pickAxe {
+    background: url("./img/a-pickaxe.png") no-repeat center center/cover;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    border: solid 2px whitesmoke;
+    color: rgb(16, 219, 60);
+    text-align:justify;
+    width: 25%;
+    height: 10%;
+    cursor: pointer;
+    font-size: 1.2vmax;
+}
+
+.shovel {
+    background: url("./img/a-shovel.png") no-repeat center center/cover;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    border: solid 2px whitesmoke;
+    color: rgb(16, 219, 60);
+    text-align:justify;
+    width: 25%;
+    height: 10%;
+    cursor: pointer;
+    font-size: 1.2vmax;
+}
+
+.axe {
+    background: url("./img/a-axe.png") no-repeat center center/cover;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    border: solid 2px whitesmoke;
+    color: rgb(16, 219, 60);
+    text-align:justify;
+    width: 25%;
+    height: 10%;
+    font-size: 1.2vmax;
+    cursor: pointer;
+}
+
+.tool:hover {
+    background-color: blue;
+}
+
+.woodContainer {
+    height: 5vh;
+    width: 5vh;
+    border: 1px solid rgb(174, 174, 174);
+    margin: 5px;
+    position: absolute;
+    left: 33%;
+    top: 60%;
+    color: azure;
+    /* visibility: hidden; */
+    background: url(./img/tree_trunk.png) no-repeat center center/cover;
+  }
+
+.groundContainer {
+    height: 5vh;
+    width: 5vh;
+    border: 1px solid rgb(174, 174, 174);
+    margin: 5px;
+    position: absolute;
+    left: 33%;
+    top: 67%;
+    color: azure;
+    /* visibility: hidden; */
+    background: url(./img/ground.png) no-repeat center center/cover;
+}
+
+.rockContainer {
+    height: 5vh;
+    width: 5vh;
+    border: 1px solid rgb(174, 174, 174);
+    margin: 5px;
+    position: absolute;
+    left: 33%;
+    top: 74%;
+    color: azure;
+    /* visibility: hidden; */
+    background: url(./img/rock.png) no-repeat center center/cover;
+}
+.leafsContainer {
+    height: 5vh;
+    width: 5vh;
+    border: 1px solid rgb(174, 174, 174);
+    margin: 5px;
+    position: absolute;
+    left: 33%;
+    top: 81%;
+    color: azure;
+    /* visibility: hidden; */
+    background: url(./img/leaves.png) no-repeat center center/cover;
+}
+
+.storage:hover {
+    box-shadow: 0px 0px 2px 2px blue;
+}
