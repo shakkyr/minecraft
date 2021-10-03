@@ -166,8 +166,8 @@ div[data-element-type="7"] {
     border: solid 2px whitesmoke;
     color: rgb(16, 219, 60);
     text-align:justify;
-    width: 25%;
-    height: 10%;
+    width: 5vmax;
+    height: 5vmax;
     cursor: pointer;
     font-size: 1.2vmax;
 }
@@ -180,8 +180,8 @@ div[data-element-type="7"] {
     border: solid 2px whitesmoke;
     color: rgb(16, 219, 60);
     text-align:justify;
-    width: 25%;
-    height: 10%;
+    width: 5vmax;
+    height: 5vmax;
     cursor: pointer;
     font-size: 1.2vmax;
 }
@@ -194,8 +194,8 @@ div[data-element-type="7"] {
     border: solid 2px whitesmoke;
     color: rgb(16, 219, 60);
     text-align:justify;
-    width: 25%;
-    height: 10%;
+    width: 5vmax;
+    height: 5vmax;
     font-size: 1.2vmax;
     cursor: pointer;
 }
